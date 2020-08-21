@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>免费VPN（free VPN）</title>
+<meta name="google-site-verification" content="5t39AHJmcwiS8G1_8-2WyXiO-zhfjgx_tM4Tkb_offA" />
+<link rel="shortcut icon" href="icon/lemon2.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image:url(minecraft-003.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #d0d0d0;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background: url(background.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ADADAD;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body onload="checkCookie()">
+<div class="header" style="color: #CE0000">
+  <h1>免费VPN</h1>
+  <p>free VPN</p>
+</div>
+
+<div class="navbar">
+  <a href="https://www.openvpn.com/">open VPN官网</a>
+  <a href="https://v2ray.com/">v2Ray官网</a>
+  <a href="https://play.google.com/">下载V2RayNG</a>
+  <a href="https://play.google.com/">蓝鲸VPN</a>
+  <a href="https://www.github.com">下载open VPN</a>
+</div>
+
+<div class="row">
+  <div class="side" style="color: #000000">
+      <h2>侧边菜单</h2>
+      <input id="myInput" value="输入搜索的内容...">
+<button id="myBtn" onclick="javascript:alert('对不起，此功能不可用')">搜索</button>
+      <div class="fakeimg" style="height:200px;"><img src="photos.jpg" width="150" height="150"><div align="center" style="color: #CE0000">LOGO</div></div>
+      
+      <h3>更多内容</h3><br>
+      <div class="fakeimg" style="height:60px;"><a href="https://play.google.com/">Google play</a></div><br>
+      <div class="fakeimg" style="height:90px;"><a href="faq.html">下载免费的open VPN配置</a></div><br>
+      <div class="fakeimg" style="height:60px;"><a href="github.io">v2Ray订阅地址</a></div><br>
+       <div class="fakeimg" style="height:60px;"><a href="https://www.google.com/">Google</a></div><br>
+         <div class="fakeimg" style="height:100px;"><a href="https://zh.m.wikipedia.com/">Minecraft wiki（加载速度可能会慢请耐心等待，很长时间都进不去请挂梯子）</a></div><br>
+           <div class="fakeimg" style="height:60px;">暂未开放</div><br>
+</div>
+  <div class="main" style="color: #0000E3">
+      <h2>已发布作品</h2>
+      <div class="fakeimg" style="height:200px;"><h4>著名现代建筑（一）<br>暂时没有开放</h4></div>
+      <p></p>
+    
+      <br>
+      <h2>工作室官方</h2>
+      <div class="fakeimg" style="height:250px;">
+        <h4>交流群：828528280
+        <br>工作室成员：阿东__H（真名胡正东），动物管理员007，yuzisauce，sushsus，Ritual_KEVIN
+        <br>工作室介绍：我们主要还原现代建筑，也为一些人代投稿作品。</h4></div>
+
+      <p>持续更新中</p>
+  </div>
+  
+
+</div>
+
+<div class="footer">
+
+<center>
+<span id="showsectime" style="color:#FF0000;"></span>
+<script type="text/javascript">
+function NewDate(str) { 
+str = str.split('-'); 
+var date = new Date(); 
+date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+date.setUTCHours(0, 0, 0, 0); 
+return date; 
+} 
+function showsectime() {
+var birthDay =NewDate("2017-01-013"); //此处设置开始时间
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("showsectime").innerHTML = "本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+setTimeout(showsectime, 1000);
+}showsectime();
+</script>
+</center>
+
+<SCRIPT language=JavaScript>
+function tick() {
+var years,months,days,hours, minutes, seconds;
+var intYears,intMonths,intDays,intHours, intMinutes, intSeconds;
+var today;
+today = new Date(); //系统当前时间
+intYears = today.getFullYear(); //得到年份,getFullYear()比getYear()更普适
+intMonths = today.getMonth() + 1; //得到月份，要加1
+intDays = today.getDate(); //得到日期
+intHours = today.getHours(); //得到小时 
+intMinutes = today.getMinutes(); //得到分钟
+intSeconds = today.getSeconds(); //得到秒钟
+years = intYears + "-"; 
+
+if(intMonths < 10 ){
+months = "0" + intMonths +"-";
+} else {
+months = intMonths +"-";
+}
+if(intDays < 10 ){
+days = "0" + intDays +" ";
+} else {
+days = intDays + " ";
+}
+if (intHours == 0) {
+hours = "00:";
+} else if (intHours < 10) {
+hours = "0" + intHours+":";
+} else {
+hours = intHours + ":";
+}
+if (intMinutes < 10) {
+minutes = "0"+intMinutes+":";
+} else {
+minutes = intMinutes+":";
+}
+if (intSeconds < 10) {
+seconds = "0"+intSeconds+" ";
+} else {
+seconds = intSeconds+" ";
+}
+timeString = years+months+days+hours+minutes+seconds;
+Clock.innerHTML = timeString;
+window.setTimeout("tick();", 1000);
+}
+window.onload = tick;
+</SCRIPT>
+</head>
+<BODY leftMargin=0 topMargin=0 marginwidth="0" marginheight="0">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TR bgColor=#73a3d4 height=40>
+<TD noWrap align=right width=209 ><SPAN id="Clock"></SPAN></TD>
+</TR>
+</TABLE>
+
+  <p>©2020 freevpn    由********设计，请遵守开源协议</p>
+</div>
+
+</body>
+</html>
